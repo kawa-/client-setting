@@ -3,6 +3,6 @@
 Linux版はなし。それぞれの詳細は、
 
 - README.win.md
-- README.mac.md
+- README.mac.new.md
 
 を参照。
