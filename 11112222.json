@@ -1,0 +1,801 @@
+{
+  "title": "MyConf, 2020年7月24日金曜日",
+  "rules": [
+  	{
+      "description": "英数・かなキーをtoggle方式にする",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "japanese_kana"
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "japanese_eisuu"
+          },
+          "to": [
+            {
+              "key_code": "japanese_kana"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + n -> short time (with wordservice)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+			  "modifiers": ["control", "command", "option", "shift"]
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + m -> short date (with wordservice)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+			  "modifiers": ["control", "command", "option", "shift"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + a -> 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + s -> 2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + d -> 3",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + f -> 4",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + g -> 5",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + h -> 6",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + j -> 7",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + k -> 8",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + l -> 9",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + semicolon -> 0",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "description": "fn + - -> ----- (When IME on, Do nothing.)",
+      "manipulators": [
+        {
+          "type": "basic",
+		  "conditions": [
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen"
+            },
+			{
+              "key_code": "hyphen"
+            },
+			{
+              "key_code": "hyphen"
+            },
+			{
+              "key_code": "hyphen"
+            },
+			{
+              "key_code": "hyphen",
+			  "repeat" : false
+            }
+          ]
+        },
+		{
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          }
+        }
+      ]
+    },
+	{
+      "description": "fn + e -> left",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + r -> right",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "right_arrow"
+            }
+          ]
+        }
+      ]
+    },
+   { 
+      "description": "fn + i -> up",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "up_arrow"
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + o -> down",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "down_arrow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + space -> delete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + space + shift -> delete_forward",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": { 
+              "mandatory": [
+                "fn", "shift"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "delete_forward"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + q -> home (command + left_arrow)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": ["command"]
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + y -> end (command + right_arrow)",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "right_arrow",
+              "modifiers": ["command"]
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + w -> option + left_arrow",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "left_arrow",
+              "modifiers": ["option"]
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + t -> option + right_arrow",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "right_arrow",
+              "modifiers": ["option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + u -> up_arrow + command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": ["command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + p -> down_arrow + command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": ["command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + . -> ctrl + tab (タブ間を→に移動)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["control"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+	"description": "fn + , -> ctrl + shift + tab (タブ間を←に移動)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["control", "shift"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn + ] -> ctrl + right_arrow (フルスクリーンで→に移動)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "description": "fn + [ -> ctrl + left_arrow (フルスクリーンで←に移動)",
+      "manipulators": [
+        { 
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": { 
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            { 
+              "key_code": "left_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
